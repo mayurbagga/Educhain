@@ -43,93 +43,129 @@ const COMPONENT_MOUNT_ACTIONS = [
 ];
 
 const DEFAULT_PROMPT_MESSAGES = [
-  // {
-  //   prompt: "Give me quick stats about Blockscout.",
-  //   example: "Give me quick stats about Blockscout.",
-  //   category: "Blockscout",
-  // },
-  // {
-  //   prompt: "Give me transaction count information.",
-  //   example: "Give me transaction count information.",
-  //   category: "Blockscout",
-  // },
-  // {
-  //   prompt: "Give me market cap and closing prince information.",
-  //   example: "Give me market cap and closing prince information.",
-  //   category: "Blockscout",
-  // },
-  // {
-  //   prompt: "I want to know more about token which have USDT symbol.",
-  //   example: "I want to know more about token which have USDT symbol.",
-  //   category: "Blockscout"
-  // },
-  // {
-  //   prompt: "I want to know verified smart contracts stats overview.",
-  //   example: "I want to know verified smart contracts stats overview.",
-  //   category: "Blockscout"
-  // },
-  // {
-  //   prompt: "Please give me the top exchange list based on volume on the Ethereum network.",
-  //   example: "Please give me the top exchange list based on volume on the Ethereum network.",
-  //   category: "Exchange",
-  // },
-  // {
-  //   prompt: "Please give me the top exchange list based on pool size on the Ethereum network.",
-  //   example: "Please give me the top exchange list based on pool size on the Ethereum network.",
-  //   category: "Exchange",
-  // },
-  // {
-  //   prompt: "Please give me the top exchange list based on swap size on the Ethereum network.",
-  //   example: "Please give me the top exchange list based on swap size on the Ethereum network.",
-  //   category: "Exchange",
-  // },
-  {
-    prompt: "Please give me the top exchange list based on volume on the BSC network.",
-    example: "Please give me the top exchange list based on volume on the BSC network.",
-    category: "Exchange",
+   // Category: Learn (New)
+   {
+    prompt: "Explain the basics of blockchain technology.",
+    example: "Explain the basics of blockchain technology.",
+    category: "Learn",
   },
   {
-    prompt: "Please give me the top exchange list based on pool size on the BSC network.",
-    example: "Please give me the top exchange list based on pool size on the BSC network.",
-    category: "Exchange",
+    prompt: "What is Web3, and how is it different from Web2?",
+    example: "What is Web3, and how is it different from Web2?",
+    category: "Learn",
   },
   {
-    prompt: "Please give me the top exchange list based on swap size on the BSC network.",
-    example: "Please give me the top exchange list based on swap size on the BSC network.",
-    category: "Exchange",
+    prompt: "How do smart contracts work on the blockchain?",
+    example: "How do smart contracts work on the blockchain?",
+    category: "Learn",
   },
   {
-    prompt: "Please give me the top exchange list based on volume on the opBNB network.",
-    example: "Please give me the top exchange list based on volume on the opBNB network.",
-    category: "Exchange",
+    prompt: "What is a decentralized application (dApp)?",
+    example: "What is a decentralized application (dApp)?",
+    category: "Learn",
   },
   {
-    prompt: "Please give me the top exchange list based on pool size on the opBNB network.",
-    example: "Please give me the top exchange list based on pool size on the opBNB network.",
-    category: "Exchange",
+    prompt: "Can you explain what DeFi (Decentralized Finance) is?",
+    example: "Can you explain what DeFi (Decentralized Finance) is?",
+    category: "Learn",
   },
   {
-    prompt: "Please give me the top exchange list based on swap size on the opBNB network.",
-    example: "Please give me the top exchange list based on swap size on the opBNB network.",
-    category: "Exchange",
+    prompt: "How does a cryptocurrency wallet work?",
+    example: "How does a cryptocurrency wallet work?",
+    category: "Learn",
   },
-  
+  {
+    prompt: "What are public and private keys in blockchain?",
+    example: "What are public and private keys in blockchain?",
+    category: "Learn",
+  },
+  {
+    prompt: "What is a token in blockchain, and how is it different from a coin?",
+    example: "What is a token in blockchain, and how is it different from a coin?",
+    category: "Learn",
+  },
+  {
+    prompt: "How does staking work, and how can I participate?",
+    example: "How does staking work, and how can I participate?",
+    category: "Learn",
+  },
+  {
+    prompt: "Explain the concept of gas fees in Ethereum.",
+    example: "Explain the concept of gas fees in Ethereum.",
+    category: "Learn",
+  },
+  {
+    prompt: "What is an NFT (Non-Fungible Token)?",
+    example: "What is an NFT (Non-Fungible Token)?",
+    category: "Learn",
+  },
+  {
+    prompt: "How do blockchain nodes work, and why are they important?",
+    example: "How do blockchain nodes work, and why are they important?",
+    category: "Learn",
+  },
+  {
+    prompt: "What is consensus in blockchain, and what are its types?",
+    example: "What is consensus in blockchain, and what are its types?",
+    category: "Learn",
+  },
+  {
+    prompt: "What is a DAO (Decentralized Autonomous Organization)?",
+    example: "What is a DAO (Decentralized Autonomous Organization)?",
+    category: "Learn",
+  },
+  {
+    prompt: "How can I deploy my own smart contract?",
+    example: "How can I deploy my own smart contract?",
+    category: "Learn",
+  },
+  {
+    prompt: "Explain the concept of tokenomics.",
+    example: "Explain the concept of tokenomics.",
+    category: "Learn",
+  },
+  {
+    prompt: "What is yield farming in DeFi?",
+    example: "What is yield farming in DeFi?",
+    category: "Learn",
+  },
+  {
+    prompt: "How does blockchain ensure security and transparency?",
+    example: "How does blockchain ensure security and transparency?",
+    category: "Learn",
+  },
+  {
+    prompt: "What are some popular blockchains for dApp development?",
+    example: "What are some popular blockchains for dApp development?",
+    category: "Learn",
+  },
+  {
+    prompt: "Explain the role of liquidity pools in DeFi.",
+    example: "Explain the role of liquidity pools in DeFi.",
+    category: "Learn",
+  },
+
+  // Category: Finance
   {
     prompt: "Gas Price",
-    example:
-      "Give me the gas price of the BSC network for performing fast transaction",
+    example: "Give me the gas price of the BSC network for performing fast transaction",
     category: "Finance",
   },
   {
-    prompt: "Transaction Details",
-    example:
-      "Give me details for transaction hash 0x2e1fbc191c7e87a345a9e8693005280afc5cb60624ca10e08c4cdededf2c5d3b on bsc network",
-    category: "Info",
+    prompt: "Please give me the pool liquidity score for token 0x05299b297cfd60188b759edadfeb7b48e212dedf on the BSC network",
+    example: "Please give me the pool liquidity score for token 0x05299b297cfd60188b759edadfeb7b48e212dedf on the BSC network",
+    category: "Finance",
   },
   {
+    prompt: "Please give me the pool liquidity score for token 0x02fb4e9c9ed8f35f56c833566fbb53ecfedaebc2 on the opBNB network",
+    example: "Please give me the pool liquidity score for token 0x02fb4e9c9ed8f35f56c833566fbb53ecfedaebc2 on the opBNB network",
+    category: "Finance",
+  },
+
+  // Category: Info
+  {
     prompt: "Transaction Details",
-    example:
-      "Give me details for transaction hash 0xffd92767fa388b0fbe36bee91d19343eecfc4cadbeea6809768d4a2655a23991 on opBNB network",
+    example: "Give me details for transaction hash 0x2e1fbc191c7e87a345a9e8693005280afc5cb60624ca10e08c4cdededf2c5d3b on BSC network",
     category: "Info",
   },
   {
@@ -137,80 +173,8 @@ const DEFAULT_PROMPT_MESSAGES = [
     example: "Give me block details for block number 39295392 on BSC network",
     category: "Info",
   },
-  {
-    prompt: "Block Details",
-    example: "Give me block details for block number 31779828 on opBNB network",
-    category: "Info",
-  },
 
-  {
-    prompt:
-      "Give me the score for token 0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c on the BSC network",
-    example:
-      "Give me the score for token 0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c on the BSC network",
-    category: "Token",
-  },
-  {
-    prompt: "Give me blockchain list",
-    example: "Give me blockchain list",
-    category: "Blockchain",
-  },
-  {
-    prompt:
-      "Please give me the pool liquidity score for token 0x05299b297cfd60188b759edadfeb7b48e212dedf on the BSC network",
-    example:
-      "Please give me the pool liquidity score for token 0x05299b297cfd60188b759edadfeb7b48e212dedf on the BSC network",
-    category: "Finance",
-  },
-  {
-    prompt:
-      "Please give me the pool liquidity score for token 0x02fb4e9c9ed8f35f56c833566fbb53ecfedaebc2 on the opBNB network",
-    example:
-      "Please give me the pool liquidity score for token 0x02fb4e9c9ed8f35f56c833566fbb53ecfedaebc2 on the opBNB network",
-    category: "Finance",
-  },
-  {
-    prompt:
-      "Give me top gainer tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top gainer tokens on the Ethereum network 24h 5m time period.",
-    category: "Token",
-  },
-  {
-    prompt:
-      "Give me top gainer tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top gainer tokens on the BSC network for 24h time period.",
-    category: "Token",
-  },
-  {
-    prompt:
-      "Give me top gainer tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top gainer tokens on the opBNB network for 24h time period.",
-    category: "Token",
-  },
-  {
-    prompt:
-      "Give me top loser tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top loser tokens on the Ethereum network for 24h time period.",
-    category: "Token",
-  },
-  {
-    prompt:
-      "Give me top loser tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top loser tokens on the BSC network for 24h time period.",
-    category: "Token",
-  },
-  {
-    prompt:
-      "Give me top loser tokens on the _NETWORK_ network for _TIME_PERIOD_ time period. **(valid time period 5m, 1h, 6h, 24h)",
-    example:
-      "Give me top loser tokens on the opBNB network for 24h time period.",
-    category: "Token",
-  },
+  // Category: Token
   {
     prompt: "Give me top token list",
     example: "Give me top token list",
@@ -221,13 +185,17 @@ const DEFAULT_PROMPT_MESSAGES = [
     example: "I want to know trending tokens",
     category: "Token",
   },
+
+  // Category: News
   {
     prompt: "I want to know latest news",
     example: "I want to know latest news",
     category: "News",
   },
 
+ 
 ];
+
 
 const SearchData = ({ id, initialMessages }) => {
   const { address: userAccountAddress } = useAccount();
@@ -485,12 +453,13 @@ const SearchData = ({ id, initialMessages }) => {
                       <span className="theme-gradient">Web3Agent</span>
                     </h4>
                     <h2 className="title w-600 mb--10">
-                      Unleashing the Power of Web3
+                    AI-Powered Web3 Learning Assistant
                     </h2>
                     <p className="description b1">
-                      We provide Mastering the Art of generating and deploying{" "}
+                    An AI-driven feature to simplify learning Web3 concepts, offering instant answers to key topics like blockchain, DeFi, NFTs, and smart contracts. 
+                    
                       <br />
-                      Smartcontract using simple prompts with AI.
+                      Perfect for users looking to expand their Web3 knowledge.
                     </p>
                   </div>
                   <div className="genarator-section">

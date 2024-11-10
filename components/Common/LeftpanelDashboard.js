@@ -102,17 +102,12 @@ const LeftpanelDashboard = () => {
                       </div>
                     </li>  */}
                     <li>
-                      <Link className={isActive("/ask-agent") ? "active" : ""} href="/ask-agent">
+                      <Link className={isActive("/search-data") ? "active" : ""} href="/search-data">
                         <i className="feather-command"></i>
                         <span>Learn Web3</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link className={isActive("/send-transaction") ? "active" : ""} href="send-transaction">
-                        <i className="feather-briefcase"></i>
-                        <span>Learn Defi</span>
-                      </Link>
-                    </li>
+                 
                     <li>
                       <Link className={isActive("/contract-builders") ? "active" : ""} href="contract-builders">
                         <i className="feather-file"></i>
@@ -126,10 +121,16 @@ const LeftpanelDashboard = () => {
                         <span>Discover Contracts</span>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className={isActive("/search-data") ? "active" : ""} href="search-data">
                         <i className="feather-search"></i>
                         <span>Learn Advanced Defi</span>
+                      </Link>
+                    </li> */}
+                       <li>
+                      <Link className={isActive("/send-transaction") ? "active" : ""} href="send-transaction">
+                        <i className="feather-briefcase"></i>
+                        <span>Learn Defi</span>
                       </Link>
                     </li>
                     
