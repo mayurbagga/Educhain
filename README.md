@@ -1,1 +1,1 @@
-# Web3Agent | BNB Chain
+# Web3Agent | EDUChain
